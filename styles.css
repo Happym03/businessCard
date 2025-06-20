@@ -1,0 +1,152 @@
+/* General Body Styles */
+body {
+    background-color: #F5F5F5;
+    font-family: Arial, sans-serif;
+    background-image: url(images/backgroundpicture.jpg);
+}
+
+/* Paragraph Margins */
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+/* All links on the page should not be underlined. */
+a {
+    text-decoration: none;
+    color: inherit; /* Makes links inherit the text color */
+}
+
+/* h1 is not in your HTML, but keeping the style if you add it later */
+h1 {
+    text-align: center;
+    font-style: italic;
+}
+h2 {
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px; /* Adds space above h2 */
+    margin-bottom: 10px; /* Adds space below h2 */
+    color: black;
+}
+
+/* Business Card Styles */
+.business-card {
+    width: 100%;
+    max-width: 600px; /* Limits the width for larger screens */
+    background-color: #F5F5F5;
+    background-image: url(images/backgroundpicture.jpg);
+    padding: 20px;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 300px;
+    margin-right: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border:none; 
+    place-content: center;
+}
+
+/* Profile Image Styles */
+.profile-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 60px;               
+    place-items: center;
+}
+
+.full-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: -150px;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.designation {
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.company {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+/* Additional styles based on your HTML structure and common practices */
+hr {
+    border: none;
+    border-top: 1px solid black;
+    margin: 20px 0;
+}
+
+.social-media {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center; /* Centers the social media links */  
+    padding-bottom: 20px;
+}
+
+
+/* Style for the container of social icons (if you use it) */
+.social-icons {
+    display: flex; /* Arranges icons in a row */
+    justify-content: center; /* Centers them horizontally */
+    gap: 15px; /* Adds space between icons */
+    margin-top: 15px; /* Space above the icons */
+}
+
+/* Style for the social media images */
+.social-icons img {
+    width: 40px; /* Adjust size of your icons */
+    height: 40px; /* Ensure square for consistency */
+    object-fit: contain; /* Good for icons, prevents cropping */
+    cursor: pointer; /* Indicates it's clickable */
+    transition: transform 0.3s ease-out; /* <-- Key for smooth "jumpy" effect */
+}
+
+/* Hover effect for the social media images */
+.social-icons img:hover {
+    transform: scale(1.15); /* Makes it slightly larger on hover (e.g., 15% larger) */
+    /* No 'color' property here as it's an image.
+       If you want a visual change, consider 'filter' or 'box-shadow'. */
+    /* Example: Add a subtle shadow on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* If you prefer text links and want them to "jump": */
+.social-media a {
+    display: inline-block; /* Essential for transform to work properly on inline elements */
+    /* margin: 0 10px; */ /* Add some space between text links */
+    transition: transform 0.3s ease-out; /* Smooth transition for the jump effect*/
+    font-size: 18px; /* Adjust size as needed */} 
+
+ .social-media a:hover {
+    transform: scale(1.1);
+    color: #007bff;  }
+
+    a {
+    color: black;
+    font-style: italic;
+    display: inline-block; /* Essential for transform to work properly on inline elements */
+    /* margin: 0 10px; */ /* Add some space between text links */
+    transition: transform 0.3s ease-out; /* Smooth transition for the jump effect*/
+    font-size: 15x; /* Adjust size as needed */
+  
+  } 
+
+ a:hover {
+    transform: scale(1.1);
+    color: #007bff;  }
